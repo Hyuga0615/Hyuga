@@ -9,10 +9,15 @@
     <body>
         <h1>Blog Name</h1>
         <div class='posts'>
-            <div class='post'>
-                <h2 class='title'>Title</h2>
-                <p class='body'>This is a sample body.</p>
-            </div>
+            @foreach ($posts as $post)
+                <div class='post'>
+                    <a href="/posts/{{ $post->id}}"></a><h2 class='title'>{{ $post->title }}</h2></a>
+                    <p class='body'>{{ $post->body }}</p>
+                </div>
+            @endforeach
+        </div>
+        <div class='paginate'>
+            {{ $posts->links() }}
         </div>
     </body>
 </html>
