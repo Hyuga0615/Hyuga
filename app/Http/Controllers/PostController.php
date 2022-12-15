@@ -19,3 +19,7 @@ class PostController extends Controller
     }
 }
 
+<<<<<<< HEAD
+?>
+=======
+>>>>>>> master
