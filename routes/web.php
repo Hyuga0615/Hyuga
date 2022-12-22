@@ -4,7 +4,10 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PostController;      
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 
 
 /*
@@ -18,15 +21,17 @@ use App\Http\Controllers\PostController;
 |
 */
 
-<<<<<<< HEAD
 Route::get('/', [PostController::class, 'index']); 
 Route::get('/posts/{post}', [PostController::class ,'show']);
 
 ?>
+<<<<<<< HEAD
+=======
 =======
 Route::get('/', [PostController::class, 'index']);
 
 
 Route::get('/posts/{post}', [PostController::class, 'show']); 
 
+>>>>>>> master
 >>>>>>> master
